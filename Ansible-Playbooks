@@ -1,0 +1,41 @@
+ANSIBLE PLAYBOOK  FOR INSTALLING MAVEN:
+
+---
+- hosts: My_Group
+  tasks:
+    - name: Install Maven using Ansible
+      become: yes
+      apt:
+        name: "{{ packages }}"
+        state: present
+      vars:
+        packages:
+           - maven
+
+
+NGINX 
+---
+- hosts: My_Group
+  tasks:
+    - name: Install Maven using Ansible
+      become: yes
+      apt:
+        name: "{{ packages }}"
+        state: present
+      vars:
+        packages:
+           - maven
+
+PYTHON
+---
+- hosts: My_Group
+  tasks:
+    - name: Install Maven using Ansible
+      become: yes
+      apt:
+        name: "{{ packages }}"
+        state: present
+      vars:
+        packages:
+           - maven
+
